@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Videojuego</title>
+    <link rel="stylesheet" href="juegosnakeinterfaz.css">
+</head>
+<body>
+    <img src="images/logoenblanco.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <div class="content">
+            <div class="game-image">
+                <img src="images/gusano.png" alt="Juego">
+            </div>
+            <div class="description">
+                <h1>¡Bienvenido a Snake!</h1>
+                <p>
+                    Eres un simpático gusano que vive en un huerto de mandarinas. Tu misión es comer las mandarinas que aparecen en el campo sin chocar con las paredes del huerto ni contigo mismo. A medida que comes más mandarinas, el gusano crece y el juego se vuelve más desafiante.
+                </p>
+                <div class="buttons">
+                    <button onclick="startGame()">Jugar</button>
+                    <button onclick="goBack()">Regresar al inicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "http://127.0.0.1:5000/run-python-code"; 
+        }
+
+        function goBack() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>

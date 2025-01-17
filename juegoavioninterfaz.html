@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Videojuego</title>
+    <link rel="stylesheet" href="juegoavioninterfaz.css">
+</head>
+<body>
+    <img src="images/logoenblanco.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <div class="content">
+            <div class="game-image">
+                <img src="images/avion.png" alt="Juego">
+            </div>
+            <div class="description">
+                <h1>¡Bienvenido al Sky Dominion!</h1>
+                <p>
+                    Última esperanza de la humanidad con el prototipo avanzado Vanguard Aegis. Armado con un arsenal devastador y tecnología híbrida, enfréntate a oleadas de naves enemigas y colosales jefes alienígenas en intensas batallas aéreas. Personaliza tus armas, sobrevive a desafiantes escenarios y descubre los secretos detrás de la invasión. Ya sea en solitario o en modo cooperativo, el destino del planeta está en tus manos. ¡Lucha por la supervivencia y domina los cielos!
+                </p>
+                <div class="buttons">
+                    <button onclick="startGame()">Jugar</button>
+                    <button onclick="goBack()">Regresar al inicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "http://127.0.0.1:5000/run-python-code2"; 
+        }
+
+        function goBack() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>

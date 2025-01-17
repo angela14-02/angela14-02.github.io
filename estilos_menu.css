@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    background-image: url('images/menu_fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center; /* Centrar la imagen */
+    background-attachment: fixed; /* Hacer que la imagen sea estática */
+    margin: 0; /* Quitar márgenes por defecto */
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Estilo del menú de navegación */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img {
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu .logo{
+    cursor: default; 
+}
+.menu .navbar ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Organiza los elementos del menú en una fila */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:#a1a1a1;
+    display: block;
+    text-decoration: none; 
+}
+
+.navbar ul li a.active {
+    color: #ffffff; 
+    font-weight: bold; 
+    pointer-events: none; 
+    cursor: default; 
+}
+
+.menu .navbar ul li a:hover{
+    color:#efffff;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    
+}
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+.header h1 {
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header1 h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.games-section {
+    padding-top: 0; /* Reduce el espacio superior */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card h2 {
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita para destacar */
+    font-family: 'Press Start 2P', cursive; /* Fuente retro estilo gamer */
+    color: #edfe06; /* Color amarillo vibrante estilo videojuegos */
+    text-shadow: 2px 2px 5px #000; /* Sombra para efecto de texto 3D */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 5px; /* Espacio inferior */
+    margin-top: 2px; /* Espacio superior */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.game-card {
+   
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.game-card button {
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.game-card button:hover {
+    background-color: #e600e6;
+}

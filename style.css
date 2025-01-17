@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.swiper {
+    width: 100vw; 
+    height: 100vh; 
+}
+
+.swiper-slide img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+.text-content {
+    position: absolute; 
+    top: 35%; 
+    left: 5%; 
+    z-index: 10; 
+    text-align: left; 
+    color: #ffffff;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.text-content p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #bdbdbd;
+}
+
+.text-content .btn-start {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(255, 0, 255, 0.6);
+}
+
+.text-content .btn-start:hover {
+    background-color: #d400d4;
+}
+
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+.swiper-button-next::after {
+    font-size: 25px;
+}
+.swiper-button-next {
+    color: #e4b40c;
+}
+.swiper-button-prev {
+    color: #e4b40c;
+}
+.swiper-pagination-bullet {
+    background-color: #747474;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: #edb312;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img{
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.menu .logo{
+    cursor: default; 
+}
+.menu .navbar ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Organiza los elementos del menú en una fila */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:#a1a1a1;
+    display: block;
+    text-decoration: none; 
+}
+
+.navbar ul li a.active {
+    color: #ffffff; 
+    font-weight: bold; 
+    pointer-events: none; 
+    cursor: default; 
+}
+
+.menu .navbar ul li a:hover{
+    color:#efffff;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    
+}
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+.footer-txt {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-txt img {
+    width: 50px;
+
+}
+
+@media(max-width:991px) {
+    
+    .menu{
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: #181818;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        color: #ffffff;
+    }
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header-content {
+        padding: 30px;
+        margin-top: 70px;
+    }
+    .slider {
+        width: 420px;
+    }
+    .enlace {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .bee {
+        padding: 50px 30px;
+    }
+    .product {
+        text-align: center;
+    }
+    .nosotros {
+        padding: 30px;
+    }
+    .nosotros-txt h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .nosotros-txt p {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .nosotros-txt span {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .links {
+        padding: 20px 0px;
+    }
+    .links ul {
+        flex-direction: column;
+        width: 200px;
+    }
+    .links ul li a {
+        display:block;
+        margin-bottom: 15px;
+    }
+}
+
+/* Efecto de aparición (fadeIn) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Empieza más abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+
+.text-content {
+    position: absolute;
+    top: 35%; 
+    left: 5%; 
+    z-index: 10;
+    text-align: left; 
+    color: #ffffff;
+    animation: fadeIn 2s ease-in-out; /* Aparece con la animación */
+}

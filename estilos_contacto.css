@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
+    background-image: url('images/contacto_fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center; /* Centrar la imagen */
+    margin: 0; /* Quitar márgenes por defecto */
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px; /* Establece un ancho máximo para la sección principal */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Aplica un relleno de 20px dentro del contenedor */
+}
+
+/* Header */
+.header {
+    text-align: center; /* Centra el texto dentro del encabezado */
+    margin-bottom: 40px; /* Establece un margen inferior */
+}
+
+.header h1 {
+    font-size: 32px; /* Tamaño de fuente para el título */
+    margin-top: 30px;
+    color: white; /* Color morado claro para el título */
+}
+
+/* Team Section */
+.team {
+    display: flex; /* Usa Flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.member {
+    background-color: #2d2d44; /* Color de fondo para los miembros */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno dentro de cada miembro */
+    width: 300px; /* Ancho fijo para cada miembro */
+    text-align: center; /* Centra el texto dentro de cada miembro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para los miembros */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.member:hover {
+    transform: translateY(-5px); /* Eleva el miembro al hacer hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Sombra más prominente al hacer hover */
+}
+
+.image img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border: 2px solid #9b59b6; /* Borde morado alrededor de la imagen */
+}
+
+.member h2 {
+    font-size: 20px; /* Tamaño de la fuente para el nombre */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+    color: #9b59b6; /* Color morado claro para el nombre */
+}
+
+.member p {
+    font-size: 14px; /* Tamaño de la fuente para la descripción */
+    color: #b3b3cc; /* Color gris claro para la descripción */
+}
+
+/* Footer */
+.footer {
+    text-align: center; /* Centra el texto dentro del pie de página */
+    margin-top: 40px; /* Establece un margen superior */
+}
+
+.btn-back {
+    display: inline-block; /* Establece el botón como un bloque en línea */
+    padding: 10px 20px; /* Relleno dentro del botón */
+    color: #fff; /* Texto blanco */
+    background-color: #9b59b6; /* Color de fondo morado para el botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color del fondo */
+}
+
+.btn-back:hover {
+    background-color: #7d3c98; /* Cambia el color del fondo cuando el cursor pasa por encima */
+}
+
+/* Menu Styles */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img {
+    width: 70px; /* Define el tamaño de la imagen del logo */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 20px; /* Espacio izquierdo */
+}
+
+.menu .logo {
+    cursor: default; /* Define el cursor como predeterminado sobre el logo */
+}
+
+.menu .navbar ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Organiza los elementos del menú en una fila */
+}
+
+.menu .navbar ul li {
+    position: relative; /* Permite una posición relativa para los elementos del menú */
+    float: left; /* Hace que los elementos floten a la izquierda */
+}
+
+.menu .navbar ul li a {
+    font-size: 18px; /* Tamaño de la fuente para los enlaces */
+    padding: 20px; /* Relleno dentro de los enlaces */
+    color: #a1a1a1; /* Color gris claro para los enlaces */
+    display: block; /* Hace que los enlaces sean bloques */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.navbar ul li a.active {
+    color: #ffffff; /* Color blanco para el enlace activo */
+    font-weight: bold; /* Hace que el texto activo sea en negrita */
+    pointer-events: none; /* Desactiva la interacción con el enlace activo */
+    cursor: default; /* Cambia el cursor para los enlaces activos */
+}
+
+.menu .navbar ul li a:hover {
+    color: #efffff; /* Cambia el color del texto cuando el cursor pasa sobre el enlace */
+}
+
+#menu {
+    display: none; /* Oculta el menú de navegación en dispositivos pequeños */
+}
+
+.menu-icono {
+    width: 25px; /* Define el tamaño del icono del menú */
+}
+
+.menu label {
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    display: none; /* Oculta el label en pantallas grandes */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu .navbar ul {
+        flex-direction: column; /* Organiza los elementos del menú en columna en pantallas pequeñas */
+        background-color: #1f1f2e; /* Fondo oscuro para el menú en pantallas pequeñas */
+        position: absolute; /* Posiciona el menú en la parte superior */
+        top: 70px; /* Desplaza el menú hacia abajo */
+        right: 0; /* Alinea el menú a la derecha */
+        display: none; /* Oculta el menú */
+        width: 100%; /* Hace que el menú ocupe todo el ancho */
+    }
+
+    #menu:checked + label + .navbar ul {
+        display: flex; /* Muestra el menú cuando se hace clic en el icono */
+    }
+
+    .menu label {
+        display: block; /* Muestra el label para dispositivos pequeños */
+        padding: 20px; /* Aplica un relleno al label */
+    }
+
+    .menu-icono {
+        width: 30px; /* Ajusta el tamaño del icono del menú */
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Videojuego</title>
+    <link rel="stylesheet" href="juegomemoriainterfaz.css">
+</head>
+<body>
+    <img src="images/logoenblanco.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <div class="content">
+            <div class="game-image">
+                <img src="images/memoria.png" alt="Juego">
+            </div>
+            <div class="description">
+                <h1>¡Bienvenido a Fruit Match!</h1>
+                <p>
+                    Es un divertido juego de memoria donde el objetivo es encontrar las parejas de frutas idénticas entre una serie de cartas volteadas. Cada vez que se destapa una carta, aparece una fruta diferente. El jugador debe recordar la ubicación de las cartas para hacer coincidir las frutas iguales. A medida que avanzas, el número de cartas aumenta, haciendo el juego más desafiante.
+                </p>
+                <div class="buttons">
+                    <button onclick="startGame()">Jugar</button>
+                    <button onclick="goBack()">Regresar al inicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "http://127.0.0.1:5000/run-python-code3"; 
+        }
+
+        function goBack() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>
