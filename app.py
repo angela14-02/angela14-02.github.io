@@ -1,9 +1,12 @@
 from flask import Flask
 import subprocess
 import traceback
+from flask_cors import CORS  # Importar CORS
 
 # Crear la instancia de la aplicación Flask
 app = Flask(__name__)
+
+CORS(app)
 
 @app.route('/')
 def index():
